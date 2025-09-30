@@ -21,6 +21,7 @@ let package = Package(
         .target(
             name: "CZeroMQ",
             path: "Sources/CZeroMQ",
+            sources: ["CZeroMQ.c"],
             publicHeadersPath: "include",
             linkerSettings: [
                 .linkedLibrary("c++")
