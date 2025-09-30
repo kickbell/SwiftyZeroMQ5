@@ -41,6 +41,9 @@ let package = Package(
                 "SocketType.swift",
                 "SwiftyZeroMQ.swift",
                 "ZeroMQError.swift"
+            ],
+            linkerSettings: [
+                .linkedLibrary("sodium")
             ]
         ),
         .binaryTarget(
