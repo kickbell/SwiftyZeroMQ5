@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SwiftyZeroMQ
+@testable import SwiftyZeroMQ5
 
 class SocketOptionsTest: XCTestCase {
     private let endpoint = "tcp://127.0.0.1:5550"
