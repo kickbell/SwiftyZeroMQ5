@@ -1,3 +1,5 @@
+import CZeroMQ
+import Foundation
 //
 // Copyright (c) 2016-2017 Ahmad M. Zawawi (azawawi)
 //
