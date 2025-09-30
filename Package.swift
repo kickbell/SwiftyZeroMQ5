@@ -43,7 +43,8 @@ let package = Package(
                 "ZeroMQError.swift"
             ],
             linkerSettings: [
-                .linkedLibrary("sodium")
+                .linkedLibrary("sodium"),
+                .unsafeFlags(["-L/opt/homebrew/lib", "-L/usr/local/lib"], .when(platforms: [.macOS]))
             ]
         ),
         .binaryTarget(

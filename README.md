@@ -36,6 +36,30 @@ Modified files include:
 - iOS 9+ / macOS 10.11+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 11.2 and Swift 5
 - Bitcode-enabled Xcode project for non-MacOS
+- **libsodium** (required for encryption features)
+
+## Installation
+
+### Swift Package Manager
+
+Add the following to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/kickbell/SwiftyZeroMQ5.git", from: "1.3.0")
+]
+```
+
+### Prerequisites
+
+#### macOS
+Install libsodium via Homebrew:
+```bash
+brew install libsodium
+```
+
+#### iOS/tvOS/watchOS
+For iOS/tvOS/watchOS projects, libsodium is bundled with the xcframework.
 
 ## Usage
 
